@@ -12,9 +12,6 @@ SOURCES += \
         osobniki.cpp \
         sasiedztwo.cpp \
         srodowisko.cpp \
-        student.cpp \
-        zlab03.cpp \
-        zlab06.cpp
 
 HEADERS += \
     generatorlosowy.h \
@@ -24,7 +21,4 @@ HEADERS += \
     osobniki.h \
     sasiedztwo.h \
     srodowisko.h \
-    student.h \
     ustawienia.h \
-    zlab03.h \
-    zlab06.h

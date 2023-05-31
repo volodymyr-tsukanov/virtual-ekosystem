@@ -3,9 +3,6 @@
 #include "ustawienia.h"
 #include "generatorlosowy.h"
 #include "sasiedztwo.h"
-#include "student.h"
-#include "zlab03.h"
-#include "zlab06.h"
 
 using namespace std;
 
@@ -36,7 +33,7 @@ string nazwaRodzaju(RodzajMieszkanca rodzaj){
 
 int main()
 {
-    /*Lab 6*/
+    /*Lab 6
     Kwadrat k1;
     cout << k1.doTekstu() << endl;
 
@@ -56,7 +53,7 @@ int main()
     cout << wp2.doTekstu() << endl;
 
     Prostakat& wp3 = k;
-    cout << wp3.doTekstu() << endl;
+    cout << wp3.doTekstu() << endl;*/
 
     /*Lab 5
     Sasiedztwo sas;

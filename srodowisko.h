@@ -30,7 +30,7 @@ public:
 
     unsigned long liczba(RodzajMieszkanca rodzaj) const;
 
-    bool martwy;
+    bool martwy();
 
     void wykonajSkok(unsigned int wiersz, unsigned int kolumna);
 
