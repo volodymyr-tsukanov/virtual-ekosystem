@@ -24,6 +24,15 @@ public:
 
     ~Srodowisko();
 
+    bool operator!(){
+        return !martwy();
+    }
+
+    void operator++(int){
+        wykonajKrokSymulacji();
+    }
+
+
     void lokuj(Mieszkaniec* mieszkaniec, unsigned int wiersz, unsigned int kolumna);
 
     Sasiedztwo ustalSasiedztwo(unsigned int wiersz, unsigned int kolumna) const;
@@ -39,6 +48,8 @@ public:
     void wykonajKrokSymulacji();
 
     std::string doTekstu() const;
+
+    static Srodowisko czytajZPliku(std::string nazwaPliku);
 };
 
 #endif // SRODOWISKO_H

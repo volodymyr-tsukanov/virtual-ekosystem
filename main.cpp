@@ -1,5 +1,8 @@
 #include <iostream>
+#include <fstream>
 #include "organizm.h"
+#include "osobniki.h"
+#include "srodowisko.h"
 #include "ustawienia.h"
 #include "generatorlosowy.h"
 #include "sasiedztwo.h"
@@ -33,6 +36,31 @@ string nazwaRodzaju(RodzajMieszkanca rodzaj){
 
 int main()
 {
+    /*Lab 12*/
+    Srodowisko ekoSystem = Srodowisko::czytajZPliku("start.txt");
+
+    ofstream plikWynikowy("symulacja.txt");
+    if(!plikWynikowy.is_open()) return 1;
+    string stanSymulacji;
+
+    unsigned long i = 0;
+
+    do{
+        system("clear");
+        cout << "Krok symulacji: " << i << endl;
+        plikWynikowy << "Krok symulacji: " << i << endl;
+        stanSymulacji= ekoSystem.doTekstu();
+
+        cout << endl << stanSymulacji << endl;
+        plikWynikowy << stanSymulacji << endl;
+        cin.ignore(1);
+        ekoSystem++;
+        i++;
+    } while(i < 200 && !ekoSystem);
+
+    cout << endl;
+    plikWynikowy.close();
+
     /*Lab 6
     Kwadrat k1;
     cout << k1.doTekstu() << endl;
