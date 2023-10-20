@@ -1,2 +1,2 @@
 # virtual-ekosystem
-C++;  Qt;  Informatyka l stopień 2 semestr
+C++, Qt; Informatyka l stopień 2 semestr
