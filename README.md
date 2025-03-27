@@ -1,5 +1,6 @@
 # Wirtualny ekosystem
-C++, Qt; Informatyka l stopień 2 semestr</br></br>
+![Finished](https://img.shields.io/badge/status-Finished%20%F0%9F%94%9A-3CB371?style=for-the-badge&logo=github) <br>
+**C++**, **Qt**; Informatyka l stopień 2 semestr <br><br>
 
 **Wirtualny ekosystem** to prosty biocybernetyczny symulator rozwoju ekosystemu, który tworzą trzy gatunki wirtualnych organizmów: glony – oznaczone jako `*`, grzyby `#` i bakterie
 `@`. Środowisko ekosystemu to prostokątna tablica składająca się z komórek, które nazywane są dalej niszami. Każda nisza może być albo pusta, albo zajęta przez żywy organizm,
